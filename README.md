@@ -1,5 +1,12 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## About Markdown Generator
+
+Use case: I have too many tabs open for a project
+Solution: Easy copy-paste UI for creating a markdown file
+
+Note: This application may also be useful to non-developers just looking to save links for later, though of course bookmarking would probably be more useful to many.
+
 ## Getting Started
 
 First, run the development server:
