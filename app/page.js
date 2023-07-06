@@ -17,7 +17,7 @@ export default function Home() {
   const handleDownload = () => {
     const content = inputs
       .map((input) => `[${input.leftInput}](${input.rightInput})`)
-      .join('\n')
+      .join('\n\n')
     const element = document.createElement('a')
     const file = new Blob([content], { type: 'text/plain' })
     element.href = URL.createObjectURL(file)
@@ -27,8 +27,15 @@ export default function Home() {
     document.body.removeChild(element)
   }
 
+  const bottomPadding = {
+    paddingBottom: '200px',
+  }
+
   return (
-    <div className='flex flex-col mt-10 w-3/4 mx-auto'>
+    <div
+      className='flex flex-col mt-10 w-3/4 mx-auto pb-100'
+      style={bottomPadding}
+    >
       <h1 className='w-full mb-4 text-center text-3xl'>
         [Markdown] (Link Generator)
       </h1>
